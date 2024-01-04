@@ -1,0 +1,44 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #095a6a;
+    color: #fff;
+    padding: 20px;
+    width: auto;
+    border-right: 1px solid #ccc;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.date-links {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.date-links li {
+    margin-bottom: 10px;
+}
+
+.date-content {
+    display: none;
+}
+
+.date-content.active {
+    display: block;
+}
