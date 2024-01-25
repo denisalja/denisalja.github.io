@@ -1,6 +1,6 @@
 // pdfViewer.js
 
-const pdfPath = 'https://raw.githubusercontent.com/denisalja/IntroCatTheory2024/8d542812c27e66044f39163f88a02c60e3fc1d60/Course%20Notes/Notes.pdf';
+const pdfPath = 'https://raw.githubusercontent.com/denisalja/IntroCatTheory2024/master/Course%20Notes/Notes.pdf';
 
 pdfjsLib.getDocument(pdfPath).then(function (pdf) {
   pdf.getPage(1).then(function (page) {
