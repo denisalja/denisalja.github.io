@@ -1,0 +1,5 @@
+# Exclude these environments from syntax checking
+VerbEnvir { pgfpicture tikzpicture tikzcd }
+
+# Command Line to Exclude Annoying Warnings
+CmdLine { -n1 -n31 -n36 -n3 -H0 }
