@@ -1,7 +1,9 @@
-function toggleDate(dateId) {
-    const allDateContents = document.querySelectorAll('.date-content');
-    allDateContents.forEach(content => content.classList.remove('active'));
+document.addEventListener('DOMContentLoaded', function() {
+    const dateContents = document.querySelectorAll('.date-content');
 
-    const selectedDateContent = document.getElementById('date-' + dateId);
-    selectedDateContent.classList.add('active');
-}
+    dateContents.forEach(function(content) {
+        content.addEventListener('dblclick', function() {
+            content.classList.toggle('active');
+        });
+    });
+});
